@@ -22,6 +22,7 @@ class _WeclomeScreenState extends State<WeclomeScreen> {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("assets/images/" + images[index]),
+                fit: BoxFit.cover,
               ),
             ),
           );
