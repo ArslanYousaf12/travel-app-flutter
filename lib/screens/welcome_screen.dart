@@ -32,6 +32,7 @@ class _WeclomeScreenState extends State<WeclomeScreen> {
             child: Container(
               margin: const EdgeInsets.only(top: 150, left: 20, right: 20),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,8 +50,26 @@ class _WeclomeScreenState extends State<WeclomeScreen> {
                         ),
                       ),
                       SizedBox(height: 40),
-                      ResponsiveButton(),
+                      ResponsiveButton(width: 120),
                     ],
+                  ),
+                  Column(
+                    children: List.generate(3, (indexDots) {
+                      return Container(
+                        margin: const EdgeInsets.only(bottom: 2),
+                        width: 8,
+                        height: index == indexDots ? 25 : 8,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color:
+                              index == indexDots
+                                  ? AppColors.mainColor
+                                  : AppColors.mainColor.withAlpha(
+                                    (0.3 * 255).toInt(),
+                                  ), // Use withAlpha
+                        ),
+                      );
+                    }),
                   ),
                 ],
               ),

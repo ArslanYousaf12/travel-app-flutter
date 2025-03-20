@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/screens/nav_screens/main_screen.dart';
 import 'package:travel_app/screens/welcome_screen.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.white,
         ),
       ),
-      home: WeclomeScreen(),
+      home: MainScreen(),
     );
   }
 }
