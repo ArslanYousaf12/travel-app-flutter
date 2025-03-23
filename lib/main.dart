@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/screens/detail_page.dart';
 import 'package:travel_app/screens/nav_screens/main_screen.dart';
 import 'package:travel_app/screens/welcome_screen.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.white,
         ),
       ),
-      home: MainScreen(),
+      home: DetailPage(),
     );
   }
 }
