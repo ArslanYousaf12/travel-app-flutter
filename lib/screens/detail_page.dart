@@ -147,8 +147,36 @@ class _DetailPageState extends State<DetailPage> {
                         );
                       }),
                     ),
+                    SizedBox(height: 20),
+                    AppText(
+                      text: "Description",
+                      color: Colors.black.withOpacity(0.8),
+                      size: 20,
+                    ),
+                    SizedBox(height: 10),
+                    AppText(
+                      text:
+                          "You must go for a travel. Traveling helps get rid of pressure. Go to the mountains to see the nature. ",
+                      color: AppColors.mainTextColor,
+                    ),
                   ],
                 ),
+              ),
+            ),
+            Positioned(
+              bottom: 20,
+              left: 20,
+              child: Row(
+                children: [
+                  AppButton(
+                    color: AppColors.textColor1,
+                    backgroundColor: Colors.white,
+                    size: 60,
+                    borderColor: AppColors.textColor1,
+                    isIcon: true,
+                    icon: Icons.favorite_border,
+                  ),
+                ],
               ),
             ),
           ],
